@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Shalini's Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .page-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .page-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .page-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .page-card .link-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .page-card:hover .link-button {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Shalini's Pages</h1>
+            <p>Explore all the amazing content below</p>
+        </header>
+
+        <div class="pages-grid">
+            <a href="hello.html" class="page-card">
+                <h2>👋 Hello</h2>
+                <p>A personalized greeting page with a warm welcome message just for you.</p>
+                <span class="link-button">View Page →</span>
+            </a>
+
+            <a href="top_10_india_tourist_places.html" class="page-card">
+                <h2>🏛️ Top 10 India Tourist Places</h2>
+                <p>Discover the most beautiful and popular tourist destinations across India.</p>
+                <span class="link-button">View Page →</span>
+            </a>
+
+            <a href="secondFile.html" class="page-card">
+                <h2>📄 Second File</h2>
+                <p>Explore additional content and information on this page.</p>
+                <span class="link-button">View Page →</span>
+            </a>
+
+            <a href="myname.html" class="page-card">
+                <h2>👤 My Name</h2>
+                <p>Learn more about who I am and my personal information.</p>
+                <span class="link-button">View Page →</span>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Shalini's Pages. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
